@@ -1,0 +1,29 @@
+package graphs_java;
+
+import java.util.Scanner;
+
+public class fizzbuzz {
+	
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Enter the numaber of children: ");		int input = scanner.nextInt();
+		System.out.println(input);
+		
+		// looping through the numbers
+		for (int i = 1; i <= input; i++) {
+			if ((i % 3 == 0)&& (i % 5 ==0)) {
+				System.out.println("FizzBuzz");
+			}
+			else if (i % 3 == 0) {
+				System.out.println("Fizz");
+			}
+			else if (i % 5 == 0) {
+				System.out.println("Buzz");
+			}
+			else {
+				System.out.println(i);
+			}
+		}
+	}
+
+}
